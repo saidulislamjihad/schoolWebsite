@@ -1,0 +1,113 @@
+@media screen and (max-width: 1399px){
+	.slider-content-outer .slider-title {
+	    font-size: 30px;
+	    margin-bottom: 15px;
+	}
+	.slider-content-outer .slider-subtitle {
+	    font-size: 30px;
+	}
+	.slider-content-outer .slider-text {
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.border-image {
+	    display: none;
+	}
+	.event-item-title {
+	    font-size: 18px;
+	    line-height: 26px;
+	}
+	.event-item-text {
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+	.event-item-image .events-link {
+	    left: 20px;
+	    bottom: 20px;
+	}
+	.blog-item-title {
+	    font-size: 18px;
+	    line-height: 26px;
+	}
+	.blog-item-text {
+	    font-size: 14px;
+	    line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.nav-toggle-btn {
+	    display: flex;
+	}
+	.nav-items-wrapper .nav-list {
+	    flex-direction: column;
+	    position: fixed;
+	    right: -100%;
+	    top: 80px;
+	    padding-top: 30px;
+	    display: block;
+	    width: 300px;
+	    height: 100vh;
+	    background: #ffffff;
+	    align-items: flex-start;
+	    z-index: 99;
+	    overflow: hidden;
+	    transition: all .5s ease;
+	    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	.nav-items-wrapper.menu-visible .nav-list {
+	    right: 0;
+	    transition: all .5s ease;
+	}
+	.nav-list .nav-item {
+	    height: auto;
+	    display: block;
+	    border-bottom: 1px solid #f4f4f4;
+	}
+	.nav-item-submenu {
+	    position: unset;
+	    margin-left: 15px;
+	    border: none;
+	    box-shadow: none;
+	    border-radius: unset;
+	    width: 100%;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.mission-vision-item-wrap {
+	    padding: 25px;
+	}
+	.mission-vision-item-content-title {
+	    font-size: 25px;
+	}
+	.mission-vision-item-content-text {
+	    font-size: 14px;
+	    line-height: 22px;
+	}
+	.counter-item-wrap {
+	    border-right: none;
+	    margin-bottom: 25px;
+	}
+	.footer-item-outer {
+	    margin-bottom: 30px;
+	}	
+}
+
+@media screen and (max-width: 767px){
+	.home-slider-section {
+	    padding: 40px 0;
+	}
+	.section-title-outer .section-title {
+	    font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.owl-nav {
+	    display: none;
+	}
+}

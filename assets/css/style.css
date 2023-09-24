@@ -1,0 +1,253 @@
+/*common css start*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+a {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.website-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+/*common css End*/
+
+/*Header css start*/
+.header-section {
+
+}
+.nav-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    position: relative;
+    background: #000;
+}
+.brand-logo-outer{
+    display: inline-block;
+}
+.brand-logo-outer .brand {
+    max-width: 100%;
+}
+.nav-items-wrapper .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0px;
+}
+.nav-item:hover .nav-item-link {
+  color: #ddd;
+}
+.nav-item-link {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 0px 12px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.nav-item.item-has-submenu {
+    position: relative;
+}
+
+.nav-item-submenu {
+    position: absolute;
+    top: 50px;
+    background-color: #ffffff;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    width: 220px;
+    z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 0;
+    transition: all .4s ease;
+    box-shadow: rgb(0 0 0 / 24%) 0px 8px 8px;
+}
+
+.nav-item.item-has-submenu:hover .nav-item-submenu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.nav-item:hover .nav-item-link i {
+    color: #fff;
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+
+.submenu-item-link {
+    color: #585555;
+    display: block;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    transition: all 0.15s linear;
+    font-weight: 500;
+}
+
+.submenu-item-link:hover {
+    color: #21696c;
+}
+
+.submenu-item {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.submenu-item:last-child {
+    border-bottom: none;
+}
+
+/*small btn css*/
+.nav-toggle-btn .btn-inner {
+    width: 26px;
+    border-bottom: 1px solid #32b67a;
+    position: relative;
+    transition: all .4s ease;
+}
+.nav-toggle-btn {
+    height: 30px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #32b67a;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+.nav-toggle-btn .btn-inner:before {
+    content: "";
+    height: 1px;
+    width: 26px;
+    position: absolute;
+    background: #32b67a;
+    top: -7px;
+}
+.nav-toggle-btn .btn-inner:after {
+    content: "";
+    height: 1px;
+    width: 26px;
+    position: absolute;
+    background: #32b67a;
+    top: 7px;
+}
+
+.menu-visible .nav-toggle-btn .btn-inner {
+    border: transparent;
+}
+
+.menu-visible .nav-toggle-btn .btn-inner:before {
+    transform: rotate(45deg);
+    top: 0px;
+    transition: all .3s ease;
+}
+
+.menu-visible .nav-toggle-btn .btn-inner:after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: all .3s ease;
+}
+
+    /*fixed header*/
+.fixed-header .header-section {
+    position: fixed;
+    background: #0E2829;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: smoothScroll 1s forwards;
+}
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/*Header css End*/
+
+
+/*Footer section css start*/
+
+.footer-section {
+    padding: 50px 0px;
+    background: #000;
+}
+
+.footer-bottom-outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-bottom-left .copyright-text {
+    margin-bottom: 0;
+    color: #9E9E9E;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-bottom-right a {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #9E9E9E;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-bottom-right .mr-20 {
+    margin-right: 20px;
+}
+
+.footer-bottom-right a:hover {
+    color: #75f3b0;
+}
+/*Footer section css End*/
